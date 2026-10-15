@@ -1,0 +1,43 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <p class="eyebrow">My Workspace</p>
+            <p class="subtitle">Manage your tasks efficiently</p>
+        </header>
+
+        <form id="task-form">
+            <input
+                type="text"
+                id="task-input"
+                placeholder="Enter a new task"
+                maxlength="200"
+                required
+            >
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div class="summary">
+            <span id="task-count">0 tasks</span>
+            <span id="completed-count">0 completed</span>
+        </div>
+
+        <ul id="task-list"></ul>
+
+        <p id="message" role="status"></p>
+    </main>
+
+</body>
+</html>
+```
